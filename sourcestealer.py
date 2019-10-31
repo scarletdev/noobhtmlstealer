@@ -1,4 +1,5 @@
 #-*-coding:utf-8-*-
+#shitty code,lmao
 
 from bs4 import BeautifulSoup
 import requests
