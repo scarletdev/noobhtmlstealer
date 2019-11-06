@@ -1,5 +1,4 @@
 #-*-coding:utf-8-*-
-#shitty code,lmao
 
 from bs4 import BeautifulSoup
 import requests
@@ -8,8 +7,9 @@ import random
 import webbrowser
 
 while True:
-    os.system("color a")
-
+    os.system("color 4")
+    os.system("echo off")
+    os.system("cls")
     print("""
 
      ██╗    ██╗███████╗ ██████╗███████╗
@@ -21,9 +21,8 @@ while True:
     # Written by Scarlet | github.com/scarletdev | discord.me/scarlet
     # Disclaimer: Please add "http://" or "https://" to the beginning of the url.
     """)
-    print("█"*90)
+    print("█"*50)
     url = str(input("URL: "))
-    #url = "https://www.google.com/"
 
     r = requests.get(url)
 
@@ -42,6 +41,9 @@ while True:
 
     if xxx == "0":
         print("Quitting...")
+        os.system("echo on")
+        os.system("color 7")
+        os.system("cls")
         raise SystemExit
 
     elif xxx == "1":
