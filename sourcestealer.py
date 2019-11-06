@@ -1,5 +1,8 @@
 #-*-coding:utf-8-*-
 
+# Written by Scarlet
+# https://www.youtube.com/channel/UCyxPTPhPcu6FDfliEgc76fQ?
+
 from bs4 import BeautifulSoup
 import requests
 import os
@@ -7,9 +10,10 @@ import random
 import webbrowser
 
 while True:
-    os.system("color 4")
+    os.system("color 1")
     os.system("echo off")
-    os.system("cls")
+    pass
+    #os.system("cls")
     print("""
 
      ██╗    ██╗███████╗ ██████╗███████╗
@@ -21,7 +25,7 @@ while True:
     # Written by Scarlet | github.com/scarletdev | discord.me/scarlet
     # Disclaimer: Please add "http://" or "https://" to the beginning of the url.
     """)
-    print("█"*50)
+    print("█"*100)
     url = str(input("URL: "))
 
     r = requests.get(url)
